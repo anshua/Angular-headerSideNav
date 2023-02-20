@@ -1,0 +1,24 @@
+.profile {
+  .dd {
+    right: 10px;
+    left: auto;
+    max-width: 40px;
+  }
+}
+
+nav {
+  height: 100%;
+}
+
+.side-nav-button {
+  display: flex;
+  font-size: 1.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-nav-button:hover {
+  background-color: rgb(69, 70, 70);
+  border-radius: 30%;
+}

@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark px-3">
-  <div class="side-nav-button p-2 me-3 text-light">
+  <div class="side-nav-button p-2 me-3 text-light" (click)="toggleSideNav()">
     <i class="fa-solid fa-bars"></i>
   </div>
   <a href="#" class="navbar-brand px-4">Navbar</a>
   <div class="navbar-collapse">
     <ul class="navbar-nav me-auto bg-dark">
-      <li class="nav-item" appDropdown  #r1="appDropdown">
+      <li class="nav-item dropdown" appDropdown  #r1="appDropdown">
         <a href="#" class="nav-link dropdown-toggle" role="button" >
-          Anshu
+          Repo
         </a>
         <ul class="dropdown-menu dropdown-menu-dark" [ngClass]="{show: r1.isOpen}">
           <li><a href="#" class="dropdown-item">Child 1</a></li>
@@ -15,9 +15,9 @@
           <li><a href="#" class="dropdown-item">Child 3</a></li>
         </ul>
       </li>
-      <li class="nav-item" appDropdown  #r2="appDropdown">
+      <li class="nav-item dropdown" appDropdown  #r2="appDropdown">
         <a href="#" class="nav-link dropdown-toggle" role="button" >
-          Anshu
+          Projects
         </a>
         <ul class="dropdown-menu dropdown-menu-dark" [ngClass]="{show: r2.isOpen}">
           <li><a href="#" class="dropdown-item">Child 1</a></li>
@@ -27,7 +27,7 @@
       </li>
       <li class="nav-item dropdown" appDropdown  #r3="appDropdown">
         <a href="#" class="nav-link dropdown-toggle" role="button" >
-          Anshu
+          Directories
         </a>
         <ul class="dropdown-menu dropdown-menu-dark" [ngClass]="{show: r3.isOpen}">
           <li><a href="#" class="dropdown-item">Child 1</a></li>

@@ -1,1 +1,8 @@
-<p>sidebar works!</p>
+<div class="side-nav-content">
+  <ul class="nav-list">
+    <li *ngFor="let item of list" class="nav-list-item border-white">
+      <i class="{{ item.icon }} border-white"></i>
+      <span class="border-white"><a href="#">{{ item.name }}</a></span>
+    </li>
+  </ul>
+</div>

@@ -21,12 +21,18 @@ main {
 app-sidebar {
   position: fixed;
   left: 0rem;
-  width: 250px;
+  width: 80px;
   height: calc(100vh - 4rem);
   background-color: rgb(28, 28, 28);
   // border-top: 1px solid white;
   // padding-top: 1px;
   color: white;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.side-nav-open {
+  width: 250px;
 }
 
 app-home {
@@ -37,6 +43,13 @@ app-home {
 
 .display-area {
   position: absolute;
+  left: 80px;
+  width: calc(100% - 80px);
+}
+
+.display-area-shrink {
+  position: absolute;
   left: 250px;
   width: calc(100% - 250px);
+  padding: 20px;
 }

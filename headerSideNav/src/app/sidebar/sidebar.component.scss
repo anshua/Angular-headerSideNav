@@ -7,6 +7,10 @@
   height: 100%;
 }
 
+// .nav-list-open {
+//   width: 100px;
+// }
+
 .nav-list-item {
   display: flex;
   align-items: center;
@@ -29,10 +33,9 @@ ul {
 
 .nav-list-item i {
   font-size: 25px;
-  height: 30px;
-  width: 30px;
+  padding: 5px;
   text-align: center;
-  margin-right: 15px;
+  margin-right: 10px;
   margin-left: 10px;
   line-height: 25px;
 }
@@ -40,8 +43,11 @@ ul {
 .nav-list-item span {
   width: 170px;
   text-transform: capitalize;
-  // text-align: center;
   align-items: center;
+}
+
+.nav-item-close{
+  display: none;
 }
 
 a {
